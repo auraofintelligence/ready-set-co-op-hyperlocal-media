@@ -3,103 +3,109 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ready SET Co-op + HyperLocal Media</title>
-    <style>
-      :root {
-        --ink: #101020;
-        --panel: #202030;
-        --purple: #8f4dff;
-        --aqua: #5fd8ff;
-        --green: #62f6a5;
-        --gold: #ffd166;
-        --white: #f7f3ff;
-        --muted: #c9c3de;
-      }
-      body {
-        background: radial-gradient(circle at 80% 0, rgba(143, 77, 255, 0.2), transparent 32rem), var(--ink);
-        color: var(--white);
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-      }
-      main {
-        margin: 0 auto;
-        max-width: 980px;
-        padding: 4rem 1.25rem;
-      }
-      h1, h2, h3 {
-        line-height: 1.05;
-        margin: 0;
-      }
-      h1 {
-        font-size: clamp(2.6rem, 7vw, 5rem);
-        max-width: 11ch;
-      }
-      h2 {
-        font-size: clamp(1.8rem, 4vw, 3rem);
-        margin-top: 3rem;
-      }
-      p {
-        color: var(--muted);
-        font-size: 1.12rem;
-      }
-      .eyebrow {
-        color: var(--green);
-        font-weight: 800;
-        letter-spacing: 0;
-        text-transform: uppercase;
-      }
-      .grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        margin-top: 1.5rem;
-      }
-      .card {
-        background: linear-gradient(145deg, rgba(32, 32, 48, 0.95), rgba(16, 16, 32, 0.98));
-        border: 1px solid rgba(143, 77, 255, 0.25);
-        border-radius: 12px;
-        padding: 1.2rem;
-      }
-      .card strong {
-        color: var(--white);
-        display: block;
-        font-size: 1.2rem;
-      }
-      .button {
-        border: 1px solid rgba(95, 216, 255, 0.7);
-        border-radius: 8px;
-        color: var(--aqua);
-        display: inline-flex;
-        font-weight: 800;
-        margin-top: 1rem;
-        padding: 0.8rem 1rem;
-        text-decoration: none;
-      }
-      @media (max-width: 760px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <meta name="description" content="Ready S.E.T. Co-op and Hyperlocal Media: a local capability, training and storytelling concept for Minjerribah / North Stradbroke Island.">
+    <title>Ready S.E.T. Co-op + Hyperlocal Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main>
-      <p class="eyebrow">Local capability engine</p>
-      <h1>Ready SET Co-op + HyperLocal Media.</h1>
-      <p>Ready SET Co-op is a concept for training, employment, local capability and practical project delivery on Straddie / Minjerribah. HyperLocal Media is the storytelling layer: local updates, project explainers, training content, event media, grant stories, and community visibility.</p>
-      <p>Together, they point toward a simple question: how do local people learn the tools, tell the stories, and get paid to build the future instead of watching it arrive from somewhere else?</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="index.html" aria-label="Ready S.E.T. Co-op and Hyperlocal Media home">
+          <span class="brand-strange">READY</span>
+          <span class="brand-but">S.E.T.</span>
+          <span class="brand-true">MEDIA</span>
+        </a>
+        <div class="nav-links">
+          <a aria-current="page" href="index.html">Overview</a>
+          <a href="ready-set-co-op.html">Co-op</a>
+          <a href="hyperlocal-media.html">Media</a>
+          <a href="https://auraofintelligence.github.io/strange-but-true/community-ledger.html">Ledger</a>
+        </div>
+      </nav>
+    </header>
 
-      <h2>What this could grow into</h2>
-      <div class="grid">
-        <article class="card"><strong>Training pathways</strong><p>AI, digital tools, media, event support, basic tech help, compliance, grants, project admin, and local service delivery.</p></article>
-        <article class="card"><strong>HyperLocal Media</strong><p>Short videos, project pages, local interviews, grant explainers, event coverage, social media systems, and community storytelling.</p></article>
-        <article class="card"><strong>Co-op capability</strong><p>A future structure for shared work, local jobs, practical training, trusted services, and community-owned capacity.</p></article>
-      </div>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Local capability engine</p>
+          <h1>Ready S.E.T. Co-op + Hyperlocal Media.</h1>
+          <p class="hero-lede">A simple local pathway: train people, document useful work, tell the island story, and help more of the money, skill and trust stay on Minjerribah.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="ready-set-co-op.html">Ready S.E.T. Co-op</a>
+            <a class="button secondary" href="hyperlocal-media.html">Hyperlocal Media</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="eyebrow">Plain version</p>
+          <h2>People and stories first.</h2>
+          <p>Ready S.E.T. Co-op is the training and work pathway. Hyperlocal Media is the public storytelling layer. Together they help locals see what is happening, learn useful tools, and get paid for practical community work.</p>
+        </aside>
+      </section>
 
-      <h2>Current status</h2>
-      <p>This is a concept page for discussion. The useful next step is narrowing it to a small pilot: one training pathway, one media output, one local project, and one clear way people can pay for useful work.</p>
-      <a class="button" href="https://auraofintelligence.github.io/strange-but-true/community-ledger.html">Back to Community Ledger</a>
+      <section class="section" aria-labelledby="stats-title">
+        <div class="section-heading">
+          <p class="eyebrow">Local context</p>
+          <h2 id="stats-title">Small island, complex work.</h2>
+          <p>North Stradbroke Island / Minjerribah is not a generic suburb. It has three main townships, a strong visitor economy, deep Quandamooka cultural context, older residents, small businesses, community groups, service gaps and seasonal pressure.</p>
+        </div>
+        <div class="stat-grid">
+          <article class="stat-card"><strong>2,100+</strong><span>usual residents in the local research range, before peak visitor surges</span></article>
+          <article class="stat-card"><strong>24%</strong><span>aged 65 and over in the research notes, so simple access and patient training matter</span></article>
+          <article class="stat-card"><strong>15.9%</strong><span>Aboriginal and Torres Strait Islander usual residents in the research notes</span></article>
+          <article class="stat-card"><strong>3 towns</strong><span>Dunwich / Goompi, Amity / Pulan and Point Lookout / Mooloomba need linked but localised support</span></article>
+        </div>
+        <p class="tiny-note">Stats are working notes from the Stradbroke Island Research Project and should be checked before formal grant submission.</p>
+      </section>
+
+      <section class="section two-column" aria-labelledby="blend-title">
+        <div>
+          <p class="eyebrow">The blend</p>
+          <h2 id="blend-title">A co-op without visibility is invisible. Media without work is noise.</h2>
+          <p class="page-copy">The co-op side helps with onboarding, training, compliance, work-readiness, volunteering, paid local services, event crews and future employment pathways.</p>
+          <p class="page-copy">The media side turns that activity into public memory: short videos, local interviews, event coverage, project explainers, business spotlights, training clips and grant stories.</p>
+          <p class="page-copy">The landing page stays light because most people will arrive from Strange but True. The deeper pages hold the bigger architecture.</p>
+        </div>
+        <div class="layer-grid">
+          <a class="layer-card" href="ready-set-co-op.html"><span>Co-op</span><strong>Ready Straddie Employment and Training Co-op</strong><p>One shared people layer for training, compliance, jobs, volunteers and practical paid work.</p></a>
+          <a class="layer-card" href="hyperlocal-media.html"><span>Media</span><strong>Hyperlocal news and multimedia</strong><p>A local story engine for community updates, project visibility, learning content and public trust.</p></a>
+        </div>
+      </section>
+
+      <section class="section feature-section" aria-labelledby="path-title">
+        <div class="section-heading">
+          <p class="eyebrow">Likely first path</p>
+          <h2 id="path-title">Start with useful local services, then grow.</h2>
+          <p>People do not need to understand the full ecosystem on day one. They need help with real things: tech, events, social media, paperwork, training, grant stories, project pages and local visibility.</p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card"><span>01</span><strong>Meet locally</strong><p>Markets, events, tech help, music, short conversations and word of mouth.</p></article>
+          <article class="choice-card"><span>02</span><strong>Fix real problems</strong><p>Phones, laptops, forms, social media, Meta Business Suite, simple AI tools, websites and community admin.</p></article>
+          <article class="choice-card"><span>03</span><strong>Train and document</strong><p>Turn repeated help into simple checklists, clips, workshops and local training pathways.</p></article>
+          <article class="choice-card"><span>04</span><strong>Publish the useful bits</strong><p>Share public updates, interviews, event recaps, project pages and grant-friendly evidence.</p></article>
+          <article class="choice-card"><span>05</span><strong>Build paid pathways</strong><p>Pay locals for useful work, make volunteer work visible, and keep records clear.</p></article>
+          <article class="choice-card"><span>06</span><strong>Connect support</strong><p>When a project gets real backing, link it back to the Community Honour Board pathway.</p></article>
+        </div>
+      </section>
+
+      <section class="section spine-card" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next practical build</p>
+          <h2 id="next-title">One training offer. One media rhythm. One local project.</h2>
+          <p>The first version can stay small: a paid help desk at markets, one monthly local media update, one beginner AI/social media workshop, and one visible community project page. That proves the pattern before legal structure and formal co-op machinery get heavy.</p>
+          <div class="hero-actions">
+            <a class="button secondary" href="ready-set-co-op.html">Read the co-op page</a>
+            <a class="button secondary" href="hyperlocal-media.html">Read the media page</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>Ready S.E.T. Co-op + Hyperlocal Media is a Strange but True / Aura of Intelligence project concept for local capability, training, storytelling and community infrastructure.</p>
+    </footer>
   </body>
 </html>
