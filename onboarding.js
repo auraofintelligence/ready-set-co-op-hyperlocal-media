@@ -1,9 +1,9 @@
 const onboardingRoutes = {
   story: {
     goalLabel: "Share a story or correction",
-    action: "Prepare the six facts a media team would need.",
+    action: "Prepare five clear facts for the media team.",
     explanation:
-      "Keep it simple: what happened, when, where, who the source is, what can be shared and what remains unknown.",
+      "Keep it practical: what happened, when, where, who the source is and what can be shared publicly.",
     link: "https://auraofintelligence.github.io/minjerribah-screen-media-network/join/",
     linkLabel: "Open the public conversation ↗",
     secondary: "demo.html",
@@ -13,7 +13,6 @@ const onboardingRoutes = {
       ["Exact date and time", "[Add what is confirmed]"],
       ["Source", "[Person, document or official link]"],
       ["What can be shared publicly", "[Be specific]"],
-      ["What remains unknown", "[Do not guess]"],
     ],
   },
   learn: {

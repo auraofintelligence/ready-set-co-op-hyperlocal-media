@@ -548,6 +548,24 @@ p {
   padding: clamp(1.75rem, 5vw, 3.5rem);
 }
 
+.connected-feature .button.secondary,
+.network-bridge .button.secondary,
+.trust-callout .button.secondary,
+.next-step .button.secondary,
+.route-result .button.secondary {
+  border-color: var(--sea-light);
+  color: var(--white);
+}
+
+.connected-feature .button.secondary:hover,
+.network-bridge .button.secondary:hover,
+.trust-callout .button.secondary:hover,
+.next-step .button.secondary:hover,
+.route-result .button.secondary:hover {
+  background: var(--foam);
+  color: var(--night);
+}
+
 .connected-feature h2,
 .network-bridge h2,
 .trust-callout h2,
@@ -1053,6 +1071,7 @@ p {
 }
 
 .site-footer {
+  background: var(--night);
   color: #c8d9d3;
   display: grid;
   gap: 2rem;
@@ -1060,6 +1079,11 @@ p {
   margin: 0;
   max-width: none;
   padding: 3rem max(1.25rem, calc((100vw - var(--max)) / 2 + 1.25rem));
+}
+
+.site-footer .footer-note,
+.site-footer p {
+  color: #c8d9d3;
 }
 
 .site-footer strong {
