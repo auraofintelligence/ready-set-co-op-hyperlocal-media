@@ -3,218 +3,128 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The proposed technical architecture for Ready SET Co-op Media: onboarding, story intake, editorial review, publishing, screens, archives and training roles.">
-    <title>Production system | Ready SET Co-op Media</title>
+    <meta name="description" content="A first-principles design for a custom, local-first media production system with human-in-the-loop agentic automation.">
+    <title>How it works | Ready SET Co-op Media</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260724-2">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260724-3">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
   </head>
   <body id="top">
-    <a class="skip-link" href="#main">Skip to the main story</a>
+    <a class="skip-link" href="#main">Skip to the main content</a>
     <header class="site-header">
-      <div class="edition-bar"><span>Minjerribah / North Stradbroke Island</span><span>System brief · proposal edition</span></div>
+      <div class="edition-bar"><span>Minjerribah / North Stradbroke Island</span><span>Custom system · human-led automation</span></div>
       <nav class="nav" aria-label="Main navigation">
         <a class="brand-mark" href="index.html" aria-label="Ready SET Co-op Media home"><span>READY</span><strong>SET CO-OP</strong><em>MEDIA</em></a>
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="onboarding.html">Start here</a>
+          <a aria-current="page" href="hyperlocal-media.html">How it works</a>
+          <a href="onboarding.html">Take part</a>
+          <a href="connections.html">Media toolkit</a>
           <a href="ready-set-co-op.html">The Co-op</a>
-          <a aria-current="page" href="hyperlocal-media.html">Production system</a>
-          <a href="connections.html">Media tools</a>
-          <a href="demo.html">Story demo</a>
-          <a class="nav-external" href="https://auraofintelligence.github.io/minjerribah-screen-media-network/" target="_blank" rel="noopener noreferrer">Media Network <span aria-hidden="true">↗</span></a>
+          <a href="demo.html">Try a story</a>
+          <a class="nav-external" href="https://auraofintelligence.github.io/minjerribah-screen-media-network/" target="_blank" rel="noopener noreferrer">MSMN ↗</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="page-hero technical-hero">
+      <section class="page-hero">
         <div>
-          <span class="status-pill proposed">How the system could work</span>
-          <p class="eyebrow">How the proposed outlet could actually work</p>
-          <h1>Intake, check, edit, approve, publish, archive.</h1>
-          <p class="hero-lede">A mixed-media production network needs a clear welcome pathway, community contributions and a publishing process people can understand. This page shows what works now and what still needs to be built.</p>
+          <span class="status-pill">First-principles system design</span>
+          <p class="eyebrow">Custom-built for the agentic age</p>
+          <h1>Local media without the platform trap.</h1>
+          <p class="hero-lede">The proposal is a custom system made from portable content, clear human roles and specialised agents. The network keeps control of its tools, its records and every public decision.</p>
         </div>
-        <aside class="plain-box system-status">
-          <strong>Current technical state</strong>
+        <aside class="system-status">
+          <strong>Non-negotiable system rules</strong>
           <dl>
-            <div><dt>Public pages</dt><dd>Working</dd></div>
-            <div><dt>Browser tools</dt><dd>Working</dd></div>
-            <div><dt>Onboarding route finder</dt><dd>Working</dd></div>
-            <div><dt>Submission inbox</dt><dd>Not built</dd></div>
-            <div><dt>CMS + member system</dt><dd>Not selected</dd></div>
+            <div><dt>Content ownership</dt><dd>Local + portable</dd></div>
+            <div><dt>Agent role</dt><dd>Assist only</dd></div>
+            <div><dt>Public release</dt><dd>Human approval</dd></div>
+            <div><dt>History</dt><dd>Versioned</dd></div>
+            <div><dt>Corrections</dt><dd>Visible</dd></div>
           </dl>
         </aside>
       </section>
 
-      <section class="section architecture-section" id="newsroom-flow" aria-labelledby="architecture-title">
+      <section class="section" id="production-flow" aria-labelledby="flow-title">
         <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">The production flow</p>
-            <h2 id="architecture-title">Six stages, with a human decision before release.</h2>
-          </div>
-          <p>Contributors would use a short, plain form instead of a complicated publishing dashboard. The production team would receive the details in a review queue.</p>
+          <div><p class="eyebrow">Seven-step production loop</p><h2 id="flow-title">Every agent action ends at a human decision.</h2></div>
+          <p>The system is not one magic bot. It is a set of narrow helpers, each working on a clear job and handing the result to a person.</p>
         </div>
         <div class="architecture-flow">
-          <article>
-            <span>01</span><h3>Intake</h3>
-            <p>Receive a tip, event, voice note, photo, interview idea, correction or official-source link.</p>
-            <b>Capture:</b><small>title · exact date · source · location level · public contact · files · what remains unknown</small>
-          </article>
-          <article>
-            <span>02</span><h3>Verify</h3>
-            <p>Check the source, names, dates, links, status and what has actually been approved for public use.</p>
-            <b>Result:</b><small>verified · needs follow-up · hold · do not publish</small>
-          </article>
-          <article>
-            <span>03</span><h3>Edit</h3>
-            <p>Prepare plain copy, captions, transcript, sound, images, cuts and accessible versions.</p>
-            <b>Keep attached:</b><small>source trail · status label · edit notes · correction contact</small>
-          </article>
-          <article>
-            <span>04</span><h3>Approve</h3>
-            <p>A responsible person makes the final publishing decision. Automation does not cross this gate.</p>
-            <b>Decision:</b><small>release · revise · schedule · return · reject</small>
-          </article>
-          <article>
-            <span>05</span><h3>Publish</h3>
-            <p>Prepare only the versions needed for the website, social feed, newsletter, audio or screens.</p>
-            <b>Each output shows:</b><small>source · time checked · status · link to more detail</small>
-          </article>
-          <article>
-            <span>06</span><h3>Archive</h3>
-            <p>Keep the approved master, sources, permission boundary, version history and correction path.</p>
-            <b>Purpose:</b><small>accountability · reuse · training · grant evidence · local memory</small>
-          </article>
+          <article><span>01 · Capture</span><h3>Turn a contribution into a clear record.</h3><p>A person sends text, voice, images, video or a link. An intake agent extracts the basics and flags missing details.</p><b>Human gate</b><small>The contributor confirms what may enter the work queue.</small></article>
+          <article><span>02 · Triage</span><h3>Route it without burying it.</h3><p>A routing agent suggests the coverage area, urgency, possible format and who needs to see it.</p><b>Human gate</b><small>A producer sets priority, assigns responsibility or stops the item.</small></article>
+          <article><span>03 · Verify</span><h3>Separate evidence from assumption.</h3><p>A verification agent gathers links, dates, conflicts, missing claims and previous versions into one check view.</p><b>Human gate</b><small>A person decides what is confirmed, uncertain or unsuitable for release.</small></article>
+          <article><span>04 · Make</span><h3>Prepare the right media, not every media.</h3><p>Production agents can draft copy, transcripts, captions, cuts, layouts and channel versions.</p><b>Human gate</b><small>Creators choose, reshape or reject the drafts.</small></article>
+          <article><span>05 · Review</span><h3>Check the complete public package.</h3><p>A review agent checks facts, links, accessibility, release status, credits, dates and consistency.</p><b>Human gate</b><small>The responsible reviewer signs off, returns it or places it on hold.</small></article>
+          <article><span>06 · Publish</span><h3>Release once, adapt deliberately.</h3><p>A distribution agent prepares the approved package for web, feeds, video, audio and public screens.</p><b>Human gate</b><small>A publisher chooses the channels and presses release.</small></article>
+          <article><span>07 · Follow through</span><h3>Stay responsible after release.</h3><p>A monitoring agent watches sources, dates, broken links, feedback and possible corrections.</p><b>Human gate</b><small>A person updates, corrects, closes or archives the item.</small></article>
         </div>
       </section>
 
-      <section class="section intake-spec" aria-labelledby="intake-title">
-        <div class="section-heading">
-          <p class="eyebrow">Story intake specification</p>
-          <h2 id="intake-title">A contributor sees a short form. The production team sees a review queue.</h2>
+      <section class="section" aria-labelledby="core-title">
+        <div class="section-heading"><p class="eyebrow">The custom core</p><h2 id="core-title">Six parts we control ourselves.</h2></div>
+        <div class="format-grid">
+          <article class="format-card"><span>Contribution gateway</span><h3>One simple way in</h3><p>A custom form and voice-friendly pathway for stories, corrections, events, media and public-source links.</p></article>
+          <article class="format-card"><span>Content ledger</span><h3>Portable records, not trapped posts</h3><p>Each item is stored as readable data, text and media with its sources, status, versions and decisions attached.</p></article>
+          <article class="format-card"><span>Agent workbench</span><h3>Specialist helpers in one place</h3><p>People can call the intake, verification, transcript, edit, caption, layout and distribution agents when useful.</p></article>
+          <article class="format-card"><span>Human gates</span><h3>Named decisions and clear ownership</h3><p>Every hand-off records who accepted, changed, returned, stopped or released the work.</p></article>
+          <article class="format-card"><span>Render engine</span><h3>One approved package, many outputs</h3><p>The custom renderer builds fast web pages, feeds, screen cards, transcripts, audio pages and channel-ready files.</p></article>
+          <article class="format-card"><span>Public trail</span><h3>Updates and corrections stay visible</h3><p>Every public item can show when it was checked, what changed and where the supporting material can be found.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="record-title">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">The content package</p><h2 id="record-title">A story is more than the words on a page.</h2></div>
+          <p>The system keeps the useful production trail without exposing private working material on the public site.</p>
         </div>
         <div class="spec-grid">
           <div class="spec-panel">
-            <h3>Contributor view</h3>
+            <h3>Public package</h3>
             <div class="field-list">
-              <span><b>What is it?</b> News tip, event, result, update, interview, correction or public alert</span>
-              <span><b>When?</b> Exact date, time and whether it is confirmed</span>
-              <span><b>Where?</b> Public location or the broadest safe location needed</span>
-              <span><b>Source?</b> Person, document or official link that supports it</span>
-              <span><b>Media?</b> Photo, sound, video, poster or no file</span>
-              <span><b>Release status?</b> What is ready for public review and what is not</span>
+              <span><b>Headline and summary</b> What people need to know</span>
+              <span><b>Format set</b> Article, video, audio, screen or live update</span>
+              <span><b>Status</b> Current, updated, corrected, closed or archived</span>
+              <span><b>Checked time</b> When the public information was last reviewed</span>
+              <span><b>Public sources</b> Links and material people may inspect</span>
+              <span><b>Correction route</b> A clear way to report a problem</span>
             </div>
           </div>
-          <div class="spec-panel dark">
-            <h3>Editorial queue</h3>
-            <div class="queue-demo">
-              <div><span>NEW</span><b>Community event</b><small>date check needed</small></div>
-              <div><span>VERIFY</span><b>Transport update</b><small>official source attached</small></div>
-              <div><span>EDIT</span><b>Local interview</b><small>transcript in review</small></div>
-              <div><span>HOLD</span><b>Project claim</b><small>source not supplied</small></div>
+          <div class="spec-panel">
+            <h3>Private production record</h3>
+            <div class="field-list">
+              <span><b>Original contribution</b> Kept separately from the public edit</span>
+              <span><b>Working sources</b> Notes, checks and unresolved questions</span>
+              <span><b>Agent outputs</b> Suggestions and drafts, never mistaken for decisions</span>
+              <span><b>Human decisions</b> Who accepted, changed, stopped or approved each step</span>
+              <span><b>Release boundaries</b> What the production team is allowed to use</span>
+              <span><b>Version history</b> What changed and why</span>
             </div>
           </div>
         </div>
-        <p class="technical-note"><strong>One practical option:</strong> WordPress with a public submission form and a private review queue. No publishing system has been selected yet. Choose one, build the form and test the whole process with real newsroom work.</p>
       </section>
 
-      <section class="section onboarding-architecture" aria-labelledby="onboarding-title">
+      <section class="section" aria-labelledby="roles-title">
         <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">Community onboarding architecture</p>
-            <h2 id="onboarding-title">One link, then a route that fits the person.</h2>
-          </div>
-          <p>A QR code or public link could open a simple welcome page, help each person choose what they need and offer optional follow-up updates.</p>
-        </div>
-        <div class="onboarding-flow">
-          <article><span>Trigger</span><strong>QR code, public link or welcome message</strong><p>A person reaches the same mobile-first starting page.</p></article>
-          <article><span>Profile</span><strong>Choose why you are here</strong><p>Resident, club, business, creative, learner, worker or long-stay visitor.</p></article>
-          <article><span>Need</span><strong>Choose the immediate job</strong><p>Share news, find practical information, learn a skill, make media, list gear or help shape the Co-op.</p></article>
-          <article><span>Route</span><strong>Open the right public pathway</strong><p>Do not force everyone through the same registration or sales funnel.</p></article>
-          <article><span>Follow-up</span><strong>Optional updates, not automatic pressure</strong><p>Future email or app updates would need a clear opt-in and an easy way out.</p></article>
-        </div>
-        <div class="button-row">
-          <a class="button primary" href="onboarding.html">Try the route finder</a>
-          <a class="button secondary" href="connections.html">See every connected tool</a>
-        </div>
-      </section>
-
-      <section class="section stack-section" aria-labelledby="stack-title">
-        <div class="section-heading">
-          <p class="eyebrow">Technical stack</p>
-          <h2 id="stack-title">What exists, what was suggested and what still needs a decision.</h2>
-        </div>
-        <div class="stack-table" role="table" aria-label="Proposed technical stack">
-          <div class="stack-row stack-head" role="row"><span role="columnheader">Capability</span><span role="columnheader">Working now</span><span role="columnheader">Possible option</span><span role="columnheader">Decision still needed</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Public website</strong><span role="cell">Static HTML/CSS/JS on GitHub Pages</span><span role="cell">WordPress</span><span role="cell">Keep static, move to CMS or use a hybrid</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Story intake</strong><span role="cell">Story demo and external public collaboration form</span><span role="cell">WP User Frontend / User Submitted Posts</span><span role="cell">Public versus private intake, attachments and moderation</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Onboarding</strong><span role="cell">Local browser route finder</span><span role="cell">Glide PWA + profile table</span><span role="cell">Whether accounts are needed at all</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Structured data</strong><span role="cell">Portable Markdown files from browser tools</span><span role="cell">Google Sheets / Airtable</span><span role="cell">Data model, access roles, backups and retention</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Automation</strong><span role="cell">None across the approval gate</span><span role="cell">Zapier</span><span role="cell">Which hand-offs save time without hiding responsibility</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Email updates</strong><span role="cell">Not built</span><span role="cell">Mailchimp / HubSpot</span><span role="cell">Opt-in, frequency, list ownership and cost</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Official feed ticker</strong><span role="cell">Not built</span><span role="cell">RSS aggregation</span><span role="cell">Approved sources, timestamps, failure handling and corrections</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Media storage</strong><span role="cell">No central upload library</span><span role="cell">To be selected</span><span role="cell">Storage, backups, release records, cost and access</span></div>
-        </div>
-      </section>
-
-      <section class="section distribution-section" aria-labelledby="distribution-title">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">Distribution architecture</p>
-            <h2 id="distribution-title">One approved source, several deliberate outputs.</h2>
-          </div>
-          <p>Publishing everywhere is not the goal. The system prepares only the format needed by each audience and keeps the source status visible.</p>
-        </div>
-        <div class="distribution-grid">
-          <article><span>Website</span><h3>Full context</h3><p>Article, links, transcript, sources, update time and correction path.</p></article>
-          <article><span>Newsletter</span><h3>Useful summary</h3><p>A short digest that sends readers back to the full source page.</p></article>
-          <article><span>Social</span><h3>Clear entry point</h3><p>Caption, short clip or tile that does not pretend to hold the whole story.</p></article>
-          <article><span>Audio</span><h3>Listen anywhere</h3><p>Interview, bulletin or podcast segment with a companion source page.</p></article>
-          <article><span>Community screen</span><h3>Glanceable notice</h3><p>Large type, essential facts, checked time and a way to find more.</p></article>
-          <article><span>Archive</span><h3>Local record</h3><p>Approved master, versions, sources and correction history.</p></article>
-        </div>
-      </section>
-
-      <section class="section roles-section" id="roles" aria-labelledby="roles-title">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">Sustainable Employment &amp; Training</p>
-            <h2 id="roles-title">Break mixed-media production into learnable roles.</h2>
-          </div>
-          <p>These are possible media roles, not advertised jobs. Start with supervised production work, then build the employment structure properly if the Co-op goes ahead.</p>
+          <div><p class="eyebrow">Sustainable Employment and Training</p><h2 id="roles-title">Learn inside the production loop.</h2></div>
+          <p>These are possible work areas, not advertised jobs. The point is to turn real media production into clear, supported pathways.</p>
         </div>
         <div class="roles-grid">
-          <article><span>Entry task</span><strong>Source checker</strong><p>Confirm a link, date, spelling or public status.</p></article>
-          <article><span>Entry task</span><strong>Caption assistant</strong><p>Prepare captions, alt text and a clean transcript draft.</p></article>
-          <article><span>Production</span><strong>Phone reporter</strong><p>Record a stable shot, clean sound and a short approved interview.</p></article>
-          <article><span>Production</span><strong>Editor</strong><p>Shape words, sound and vision while keeping the source trail attached.</p></article>
-          <article><span>Operations</span><strong>Community coordinator</strong><p>Route contributions, answer questions and keep the queue moving.</p></article>
-          <article><span>Operations</span><strong>Producer / station lead</strong><p>Hold the editorial calendar, final workflow, funding and public reporting.</p></article>
-        </div>
-      </section>
-
-      <section class="section rollout-section" aria-labelledby="rollout-title">
-        <div class="section-heading">
-          <p class="eyebrow">A buildable launch sequence</p>
-          <h2 id="rollout-title">Test the work before buying the full stack.</h2>
-        </div>
-        <div class="rollout-track">
-          <article><span>Phase 01</span><h3>Listen + specify</h3><p>Test the onboarding routes, story fields, status labels and approval gate with willing people.</p></article>
-          <article><span>Phase 02</span><h3>Run one desk</h3><p>Publish one small recurring format using manual review and the existing public tools.</p></article>
-          <article><span>Phase 03</span><h3>Choose and build the system</h3><p>Set up publishing, contributions, media storage and community updates using what the production team has learned.</p></article>
-          <article><span>Phase 04</span><h3>Train + report</h3><p>Define supervised roles, show what was produced, what it cost and what should happen next.</p></article>
+          <article><span>Listen + organise</span><strong>Contributor support</strong><p>Help people bring in stories, events, corrections and media without needing technical knowledge.</p></article>
+          <article><span>Check + explain</span><strong>Research and verification</strong><p>Confirm dates, links and public information, then make it understandable.</p></article>
+          <article><span>Record + create</span><strong>Video, audio and photography</strong><p>Capture interviews, sound, scenes, events and useful local updates.</p></article>
+          <article><span>Shape + access</span><strong>Editing, captions and transcripts</strong><p>Turn raw media into clear, accessible public work.</p></article>
+          <article><span>Release + maintain</span><strong>Publishing and screens</strong><p>Prepare approved packages, operate channels and keep information current.</p></article>
+          <article><span>Coordinate + report</span><strong>Production leadership</strong><p>Hold the schedule, human gates, budgets, public reporting and correction process.</p></article>
         </div>
       </section>
 
       <section class="section editorial-boundary" aria-labelledby="authority-title">
-        <div class="section-heading">
-          <p class="eyebrow">Publishing authority</p>
-          <h2 id="authority-title">The proposal cannot appoint itself.</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">Who decides?</p><h2 id="authority-title">The system does not appoint itself.</h2></div>
         <div class="editorial-boundary-copy">
           <p>If Ready SET Co-op forms, its members and elected leadership would set the publishing rules together, within the laws and Acts that apply.</p>
           <p>This website and Luke do not get to decide those rules in advance.</p>
@@ -222,15 +132,14 @@
       </section>
 
       <nav class="route-nav" aria-label="Previous and next pages">
-        <a href="ready-set-co-op.html"><span aria-hidden="true">←</span> Previous: The Co-op</a>
-        <a href="connections.html">Next: Media tools <span aria-hidden="true">→</span></a>
+        <a href="index.html">← Previous: Home</a>
+        <a href="onboarding.html">Next: Find your way in →</a>
       </nav>
     </main>
-
     <a class="back-to-top" href="#top" aria-label="Back to the top">↑</a>
     <footer class="site-footer">
       <div><strong>Ready SET Co-op Media</strong><p>SET means Sustainable Employment and Training.</p></div>
-      <p class="footer-note">This independent website brings ideas together for discussion. It does not mean any person or organisation supports them, and nothing here has been approved, funded or secured.</p>
+      <p>This independent website brings ideas together for discussion. It does not mean any person or organisation supports them, and nothing here has been approved, funded or secured.</p>
     </footer>
   </body>
 </html>
