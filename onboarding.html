@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find the right way into Ready SET Co-op Media: share a story, learn a skill, make media, map equipment, host a screen or help shape the proposal.">
+    <title>Start here | Ready SET Co-op Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to the route finder</a>
+    <header class="site-header">
+      <div class="edition-bar"><span>Minjerribah / North Stradbroke Island</span><span>Local onboarding prototype · no login</span></div>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="index.html" aria-label="Ready SET Co-op Media home"><span>READY</span><strong>SET CO-OP</strong><em>MEDIA</em></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a aria-current="page" href="onboarding.html">Start here</a>
+          <a href="ready-set-co-op.html">The Co-op</a>
+          <a href="hyperlocal-media.html">Newsroom system</a>
+          <a href="connections.html">Media tools</a>
+          <a href="demo.html">Story demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero onboarding-hero">
+        <div>
+          <span class="status-pill working">Working local prototype</span>
+          <p class="eyebrow">Start with the job in front of you</p>
+          <h1>Find your way into the media proposal.</h1>
+          <p class="hero-lede">Choose who you are here as and what you want to do. The page will prepare a starting route and a short brief you can copy. It does not ask for your name, email or private details.</p>
+        </div>
+        <aside class="plain-box">
+          <strong>Your answers stay on this page.</strong>
+          <p>This prototype has no account, database or tracking form. Nothing is sent when you choose an option or build a brief.</p>
+        </aside>
+      </section>
+
+      <section class="section route-builder" aria-labelledby="route-title">
+        <div class="section-heading">
+          <p class="eyebrow">Two quick choices</p>
+          <h2 id="route-title">What brings you here?</h2>
+        </div>
+
+        <form id="onboarding-form">
+          <fieldset>
+            <legend>1. I am here as…</legend>
+            <div class="option-grid profile-options">
+              <label><input type="radio" name="profile" value="resident" checked><span><strong>Resident</strong><small>I live here and want useful local information or a way to contribute.</small></span></label>
+              <label><input type="radio" name="profile" value="club"><span><strong>Club or group</strong><small>We have events, results, volunteers, notices or a project to explain.</small></span></label>
+              <label><input type="radio" name="profile" value="business"><span><strong>Business or sole trader</strong><small>I need a clear profile, practical media or a local update.</small></span></label>
+              <label><input type="radio" name="profile" value="creative"><span><strong>Creative or maker</strong><small>I work with film, sound, photography, writing, art or music.</small></span></label>
+              <label><input type="radio" name="profile" value="learner"><span><strong>Learner or future worker</strong><small>I want a small real task that builds a media skill.</small></span></label>
+              <label><input type="radio" name="profile" value="visitor"><span><strong>New or long-stay visitor</strong><small>I want a clearer route to practical island information.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. I want to…</legend>
+            <div class="option-grid goal-options">
+              <label><input type="radio" name="goal" value="story" checked><span><strong>Share a story or correction</strong><small>Prepare the facts and find the public conversation.</small></span></label>
+              <label><input type="radio" name="goal" value="learn"><span><strong>Learn a media skill</strong><small>Find a small role and a practical first exercise.</small></span></label>
+              <label><input type="radio" name="goal" value="make"><span><strong>Plan a film or interview</strong><small>Open the documentary builders with a clear starting note.</small></span></label>
+              <label><input type="radio" name="goal" value="assets"><span><strong>Map gear or media assets</strong><small>List what exists, what can be shared and what is missing.</small></span></label>
+              <label><input type="radio" name="goal" value="screen"><span><strong>Prepare a notice or host a screen</strong><small>Explore a public notice and screen-network pathway.</small></span></label>
+              <label><input type="radio" name="goal" value="coop"><span><strong>Help shape Ready SET Co-op</strong><small>See the trust path and the public proposal discussion.</small></span></label>
+            </div>
+          </fieldset>
+
+          <button class="button primary build-route" type="submit">Build my starting route</button>
+        </form>
+      </section>
+
+      <section class="section route-result" id="route-result" aria-live="polite" aria-labelledby="result-title">
+        <div class="route-result-head">
+          <div>
+            <p class="eyebrow">Your starting route</p>
+            <h2 id="result-title">Resident + share a story</h2>
+          </div>
+          <span id="result-status">No details sent</span>
+        </div>
+        <div class="result-grid">
+          <div class="result-main">
+            <span>Recommended first move</span>
+            <h3 id="result-action">Prepare the six facts a newsroom would need.</h3>
+            <p id="result-explanation">Keep it simple: what happened, when, where, who the source is, what can be shared and what remains unknown.</p>
+            <div class="button-row">
+              <a class="button primary" id="result-link" href="https://auraofintelligence.github.io/minjerribah-screen-media-network/join/" target="_blank" rel="noopener noreferrer">Open the public conversation <span aria-hidden="true">↗</span></a>
+              <a class="button secondary" id="result-secondary-link" href="demo.html">See a story example</a>
+            </div>
+          </div>
+          <div class="brief-panel">
+            <div class="brief-toolbar"><strong>Your starter brief</strong><button type="button" id="copy-brief">Copy brief</button></div>
+            <pre id="starter-brief">READY SET CO-OP MEDIA — STARTER BRIEF
+
+I am here as: Resident
+I want to: Share a story or correction
+
+What happened or needs correcting:
+[Write one clear sentence]
+
+Exact date and time:
+[Add what is confirmed]
+
+Source:
+[Person, document or official link]
+
+What can be shared publicly:
+[Be specific]
+
+What remains unknown:
+[Do not guess]</pre>
+            <p class="copy-status" id="copy-status"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section onboarding-system-note" aria-labelledby="system-note-title">
+        <div>
+          <p class="eyebrow">What this prototype tests</p>
+          <h2 id="system-note-title">Routing before registration.</h2>
+        </div>
+        <div>
+          <p>The source media program proposed a QR code, profile registration, a welcome app and an automated email sequence. This first version tests the important bit without collecting personal data: can different people quickly find the right next action?</p>
+          <p>If that works, later decisions can cover optional accounts, email updates, a private intake channel and who is authorised to run them.</p>
+        </div>
+      </section>
+
+      <nav class="route-nav" aria-label="Previous and next pages">
+        <a href="index.html"><span aria-hidden="true">←</span> Previous: Home</a>
+        <a href="ready-set-co-op.html">Next: The Co-op <span aria-hidden="true">→</span></a>
+      </nav>
+    </main>
+
+    <a class="back-to-top" href="#top" aria-label="Back to the top">↑</a>
+    <footer class="site-footer">
+      <div><strong>Ready SET Co-op Media</strong><p>SET means Sustainable Employment and Training.</p></div>
+      <p class="footer-note">This independent website brings ideas together for discussion. It does not mean any person or organisation supports them, and nothing here has been approved, funded or secured.</p>
+    </footer>
+    <script src="onboarding.js"></script>
+  </body>
+</html>
