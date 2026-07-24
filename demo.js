@@ -1,85 +1,95 @@
 const scenarios = {
-  comp: {
+  event: {
+    sourceTitle: "A Saturday clean-up",
     source:
-      "PLFC shares a competition wrap-up: broad fishing zones, tide timing, photo-measured catch lengths on legal measuring devices, legal food catches where kept, sponsor thanks and a short secretary note.",
-    tags: ["Comp recap", "Length photos", "No weigh-to-win"],
-    agent: [
-      "Separate private member details from public catch records.",
-      "Extract species, length class, kept/released note, tide and weather timing.",
-      "Create conservation-aware news copy without implying legal food fish are wrong.",
-    ],
+      "A community group wants to share the time, meeting point, what to bring, weather check and a public contact method for Saturday’s clean-up.",
+    tags: ["Event details", "Weather check", "Public contact"],
+    toolTitle: "Straddie Noticeboard Network",
+    toolNote:
+      "Use a simple public-notice builder to prepare a clear phone, web or screen version without adding private group details.",
+    toolUrl: "https://auraofintelligence.github.io/straddie-noticeboard-network/",
     checks: {
-      facts: "Confirm photo length records, sponsor names and date",
-      permission: "Use broad zones and approved catch photos only",
-      tone: "Community pride, safety-aware, locally useful",
+      facts: "Confirm the date, start and finish time, meeting point and organiser.",
+      permission: "Use a public contact method and only share approved photos.",
+      care: "State safety, access, weather and what volunteers should bring.",
     },
-    phoneTitle: "Comp wrap-up posted",
-    phoneCopy: "Length-photo results, release notes and next comp notice are ready. Tide story and sponsor thanks included.",
-    tvTitle: "Point Lookout fishing weekend",
-    tvCopy: "Good turnout, rising tide window and length-based comp highlights.",
-    tvTicker: "Next: members night and junior fishing clinic",
-    webTitle: "Fishing club weekend becomes community signal",
-    webCopy:
-      "The public story connects sport, family participation, local sponsors, safe conditions and the next invitation for residents and visitors.",
-    kioskTitle: "Public data point saved",
-    kioskCopy:
-      "Event type, broad zone, tide phase, weather note, length class, kept/released status and sponsor tags become reusable local context.",
+    phoneTitle: "Saturday clean-up",
+    phoneCopy:
+      "The short version gives the time, meeting point, what to bring and the checked weather note.",
+    screenTitle: "Help for an hour",
+    screenCopy:
+      "Big type shows the essential details and a simple way to find the full notice.",
+    networkTitle: "Why the clean-up matters",
+    networkCopy:
+      "A follow-up story can thank helpers, show the result and share the next practical need.",
+    archiveTitle: "Keep the useful trail",
+    archiveCopy:
+      "Save the approved notice, source contact, permission notes, result and any correction.",
+    learning:
+      "A beginner could learn to check a date, format a clear notice, add alt text to a photo or prepare the large-type screen version. The next event becomes easier because the method did not disappear with the first post.",
   },
-  conditions: {
+  project: {
+    sourceTitle: "A club fixes something useful",
     source:
-      "PLFC shares a public-safe field snapshot: morning tide window, wind watch, UV note, broad Moreton Bay zone and no precise team locations.",
-    tags: ["Tide window", "Weather monitor", "No precise GPS"],
-    agent: [
-      "Convert tide and weather notes into plain timing advice.",
-      "Tag the snapshot for seasonal pattern learning and future simulation.",
-      "Create public outlet versions without revealing team routes.",
-    ],
+      "A local club has repaired a shared space. It wants to show what changed, thank the helpers and explain the next small thing it needs.",
+    tags: ["Before and after", "Helper thanks", "Next need"],
+    toolTitle: "Straddie Content Assets Kit",
+    toolNote:
+      "Use the business, asset and wish-list builders to separate what the club has, what was used and what support is still needed.",
+    toolUrl: "https://auraofintelligence.github.io/straddie-content-assets-kit/",
     checks: {
-      facts: "Confirm forecast source and observation time",
-      permission: "Keep live location and team identity private",
-      tone: "Helpful, non-alarmist, safety-first",
+      facts: "Confirm what was repaired, when it happened and who can be credited.",
+      permission: "Check image approval and do not reveal private storage or security details.",
+      care: "Thank people accurately and describe the next need without pressure or exaggeration.",
     },
-    phoneTitle: "Morning fishing window",
-    phoneCopy: "Rising tide and light morning wind look useful. Check official weather before heading out.",
-    tvTitle: "Today’s coastal conditions",
-    tvCopy: "Rising tide signal, UV high, wind watch after lunch.",
-    tvTicker: "Good local timing info; official safety sources still apply",
-    webTitle: "Public field snapshot for Point Lookout waters",
-    webCopy:
-      "The story explains the timing context without exposing crews: tide phase, broad zone, weather signal and what members learned from the day.",
-    kioskTitle: "Simulator timing layer",
-    kioskCopy:
-      "Tide phase, wind category, UV flag, broad zone and activity type become a public-safe pattern for future planning.",
+    phoneTitle: "One job finished",
+    phoneCopy:
+      "A short before-and-after post shows the result, thanks approved helpers and links to the next need.",
+    screenTitle: "Local hands, useful result",
+    screenCopy:
+      "A simple slide celebrates the finished job without cramming in the whole project history.",
+    networkTitle: "How the fix came together",
+    networkCopy:
+      "A longer story can explain the need, the work, what people learnt and the next invitation.",
+    archiveTitle: "Evidence for the next step",
+    archiveCopy:
+      "Keep approved photos, costs or in-kind notes, volunteer records and the follow-up task.",
+    learning:
+      "A beginner could learn to take a consistent before-and-after photo, write a caption, list the gear used or record a short helper quote. That work also makes future grant evidence easier.",
   },
-  clinic: {
+  interview: {
+    sourceTitle: "A chat with a local maker",
     source:
-      "PLFC shares a junior fishing clinic pack: workshop topic, family attendance range, safe fish handling lesson, sponsor support and approved images.",
-    tags: ["Junior clinic", "Family learning", "Sponsor-safe"],
-    agent: [
-      "Turn the clinic into a family-friendly news item and invite pathway.",
-      "Extract learning outcomes for grants and community education reporting.",
-      "Prepare phone, venue screen, website and kiosk versions.",
-    ],
+      "A local maker agrees to a short interview about what they create, why they do it and what kind of support would genuinely help.",
+    tags: ["Five questions", "Clear consent", "Maker’s own words"],
+    toolTitle: "Film Club Documentary Builders",
+    toolNote:
+      "Use the interview, source-trail and subject builders to plan the conversation and keep public notes separate from private research.",
+    toolUrl: "https://auraofintelligence.github.io/film-club-documentary-builders/",
     checks: {
-      facts: "Confirm facilitator, date and support partners",
-      permission: "Children's images require explicit approval",
-      tone: "Joyful, protective, welcoming to beginners",
+      facts: "Confirm names, project details, links and any claims mentioned in the interview.",
+      permission: "Agree on recording, editing, images, where it may appear and what stays off the record.",
+      care: "Keep the maker’s meaning and natural voice instead of forcing a sales pitch onto them.",
     },
-    phoneTitle: "Junior clinic recap",
-    phoneCopy: "Families learned safe handling, tide basics and club pathways. Next clinic interest list is open.",
-    tvTitle: "Kids learning on the coast",
-    tvCopy: "Safe fishing skills, family day and local sponsor support.",
-    tvTicker: "Join the next beginner-friendly club activity",
-    webTitle: "Fishing education becomes community capacity",
-    webCopy:
-      "The article shows how a club activity builds skills, family participation, volunteer pathways, sponsor value and evidence for future programs.",
-    kioskTitle: "Learning archive point",
-    kioskCopy:
-      "Topic, age range, attendance band, learning outcome and consent-cleared media become reusable education and grant evidence.",
+    phoneTitle: "Meet a local maker",
+    phoneCopy:
+      "A short approved quote and image can introduce the person and point to the full story.",
+    screenTitle: "Made here",
+    screenCopy:
+      "A large, clear card shows the maker, one approved line and where to learn more.",
+    networkTitle: "The fuller conversation",
+    networkCopy:
+      "The interview can become a story, audio piece or short video with the source and permission trail attached.",
+    archiveTitle: "Notes that remain useful",
+    archiveCopy:
+      "Keep the approved transcript, release boundary, source links, final edit and correction contact.",
+    learning:
+      "A beginner could learn to prepare one good question, monitor sound, write a true caption or check a transcript. The maker gets a useful story and the learner gets real practice.",
   },
 };
 
 const tabs = document.querySelectorAll(".scenario-tab");
+
 const setText = (id, value) => {
   const element = document.getElementById(id);
   if (element) element.textContent = value;
@@ -93,41 +103,57 @@ function renderScenario(key) {
     const isActive = tab.dataset.scenario === key;
     tab.classList.toggle("is-active", isActive);
     tab.setAttribute("aria-selected", String(isActive));
+    tab.setAttribute("tabindex", isActive ? "0" : "-1");
   });
 
-  setText("source-note", scenario.source);
-  const tags = document.getElementById("source-tags");
-  tags.replaceChildren(
-    ...scenario.tags.map((tag) => {
-      const item = document.createElement("b");
-      item.textContent = tag;
-      return item;
-    })
-  );
+  const scenarioPanel = document.getElementById("scenario-panel");
+  const activeTab = Array.from(tabs).find((tab) => tab.dataset.scenario === key);
+  if (scenarioPanel && activeTab) {
+    scenarioPanel.setAttribute("aria-labelledby", activeTab.id);
+  }
 
-  const agentList = document.getElementById("agent-list");
-  agentList.replaceChildren(
-    ...scenario.agent.map((line) => {
-      const item = document.createElement("li");
-      item.textContent = line;
-      return item;
-    })
-  );
+  setText("source-title", scenario.sourceTitle);
+  setText("source-note", scenario.source);
+
+  const tags = document.getElementById("source-tags");
+  if (tags) {
+    tags.replaceChildren(
+      ...scenario.tags.map((tag) => {
+        const item = document.createElement("b");
+        item.textContent = tag;
+        return item;
+      })
+    );
+  }
+
+  setText("tool-title", scenario.toolTitle);
+  setText("tool-note", scenario.toolNote);
+  const toolLink = document.getElementById("tool-link");
+  if (toolLink) toolLink.href = scenario.toolUrl;
 
   setText("fact-check", scenario.checks.facts);
   setText("permission-check", scenario.checks.permission);
-  setText("tone-check", scenario.checks.tone);
+  setText("care-check", scenario.checks.care);
   setText("phone-title", scenario.phoneTitle);
   setText("phone-copy", scenario.phoneCopy);
-  setText("tv-title", scenario.tvTitle);
-  setText("tv-copy", scenario.tvCopy);
-  setText("tv-ticker", scenario.tvTicker);
-  setText("web-title", scenario.webTitle);
-  setText("web-copy", scenario.webCopy);
-  setText("kiosk-title", scenario.kioskTitle);
-  setText("kiosk-copy", scenario.kioskCopy);
+  setText("screen-title", scenario.screenTitle);
+  setText("screen-copy", scenario.screenCopy);
+  setText("network-output-title", scenario.networkTitle);
+  setText("network-output-copy", scenario.networkCopy);
+  setText("archive-title", scenario.archiveTitle);
+  setText("archive-copy", scenario.archiveCopy);
+  setText("learning-copy", scenario.learning);
 }
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => renderScenario(tab.dataset.scenario));
+  tab.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    const tabList = Array.from(tabs);
+    const currentIndex = tabList.indexOf(tab);
+    const direction = event.key === "ArrowRight" ? 1 : -1;
+    const nextTab = tabList[(currentIndex + direction + tabList.length) % tabList.length];
+    nextTab.focus();
+    renderScenario(nextTab.dataset.scenario);
+  });
 });

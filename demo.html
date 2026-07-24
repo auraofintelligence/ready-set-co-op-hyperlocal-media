@@ -3,165 +3,144 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Point Lookout Fishing Club and Ready S.E.T. Hyperlocal Media pipeline demo: public-safe club data becomes local news, timing-aware outlets and simulator-ready community context.">
-    <title>PLFC Pipeline Demo | Ready S.E.T. Media</title>
+    <meta name="description" content="A simple interactive example showing how an ordinary local story can be checked, made and shared with care.">
+    <title>See an example | Ready SET Media</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to the main story</a>
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand-mark" href="index.html" aria-label="Ready S.E.T. Co-op and Hyperlocal Media home">
-          <span class="brand-strange">READY</span>
-          <span class="brand-but">S.E.T.</span>
-          <span class="brand-true">MEDIA</span>
-        </a>
+        <a class="brand-mark" href="index.html" aria-label="Ready SET Media home"><span>READY SET</span><strong>MEDIA</strong></a>
         <div class="nav-links">
-          <a href="index.html">Overview</a>
-          <a href="ready-set-co-op.html">Co-op</a>
-          <a href="hyperlocal-media.html">Media</a>
-          <a aria-current="page" href="demo.html">Demo</a>
-          <a href="https://auraofintelligence.github.io/strange-but-true/community-ledger.html">Ledger</a>
+          <a href="index.html">Home</a>
+          <a href="ready-set-co-op.html">Ready SET</a>
+          <a href="hyperlocal-media.html">Local media</a>
+          <a href="connections.html">Find a tool</a>
+          <a aria-current="page" href="demo.html">See an example</a>
+          <a class="nav-external" href="https://auraofintelligence.github.io/ready-set-co-op-trust-hub/" target="_blank" rel="noopener noreferrer">Trust Hub <span aria-hidden="true">↗</span></a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="demo-hero" aria-labelledby="demo-title">
-        <div class="demo-hero-copy">
-          <p class="eyebrow">PLFC x Ready S.E.T. Media</p>
-          <h1 id="demo-title">Club content becomes local news and simulator fuel.</h1>
-          <p class="hero-lede">Point Lookout Fishing Club can share approved competition, tide, weather, media and education snapshots. Ready S.E.T. Hyperlocal Media turns them into public-safe stories, timed local outlets and future simulation layers.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#pipeline-demo">Run PLFC demo</a>
-            <a class="button secondary" href="https://auraofintelligence.github.io/straddie-disaster-kiosks/">Kiosk concept</a>
+      <section class="page-hero demo-page-hero">
+        <div>
+          <span class="status-pill example">Made-up examples</span>
+          <p class="eyebrow">See the pathway in action</p>
+          <h1>One local story. A few careful steps. Useful results.</h1>
+          <p class="hero-lede">Choose an everyday example below. You will see what comes in, which tool might help, what a person must check and how the same story could be shared in a few sensible ways.</p>
+        </div>
+        <aside class="plain-box">
+          <strong>AI can help with the draft.</strong>
+          <p>It can sort notes, suggest a shorter version or prepare captions. A person still checks the facts, permission, safety, tone and final release.</p>
+        </aside>
+      </section>
+
+      <section class="section example-section" aria-labelledby="example-title">
+        <div class="section-heading">
+          <p class="eyebrow">Choose a story</p>
+          <h2 id="example-title">What are we trying to share?</h2>
+        </div>
+        <div class="scenario-tabs" role="tablist" aria-label="Local story examples">
+          <button class="scenario-tab is-active" id="tab-event" type="button" role="tab" aria-selected="true" aria-controls="scenario-panel" tabindex="0" data-scenario="event">Community event</button>
+          <button class="scenario-tab" id="tab-project" type="button" role="tab" aria-selected="false" aria-controls="scenario-panel" tabindex="-1" data-scenario="project">Useful project</button>
+          <button class="scenario-tab" id="tab-interview" type="button" role="tab" aria-selected="false" aria-controls="scenario-panel" tabindex="-1" data-scenario="interview">Local interview</button>
+        </div>
+
+        <div class="scenario-panel" id="scenario-panel" role="tabpanel" aria-labelledby="tab-event" tabindex="0">
+          <article class="scenario-source">
+            <span class="step-label">1 · What comes in</span>
+            <h3 id="source-title">A Saturday clean-up</h3>
+            <p id="source-note">A community group wants to share the time, meeting point, what to bring, weather check and a public contact method for Saturday’s clean-up.</p>
+            <div class="signal-tags" id="source-tags" aria-label="Story details">
+              <b>Event details</b><b>Weather check</b><b>Public contact</b>
+            </div>
+          </article>
+
+          <article class="scenario-tool">
+            <span class="step-label">2 · A tool that could help</span>
+            <h3 id="tool-title">Straddie Noticeboard Network</h3>
+            <p id="tool-note">Use a simple public-notice builder to prepare a clear phone, web or screen version without adding private group details.</p>
+            <a id="tool-link" href="https://auraofintelligence.github.io/straddie-noticeboard-network/" target="_blank" rel="noopener noreferrer">Open this tool <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="scenario-checks">
+            <span class="step-label">3 · A person checks</span>
+            <div class="check-row"><strong>Facts</strong><span id="fact-check">Confirm the date, start and finish time, meeting point and organiser.</span></div>
+            <div class="check-row"><strong>Permission</strong><span id="permission-check">Use a public contact method and only share approved photos.</span></div>
+            <div class="check-row"><strong>Care</strong><span id="care-check">State safety, access, weather and what volunteers should bring.</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section output-section" aria-labelledby="output-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">4 · Share the useful versions</p>
+            <h2 id="output-title">Same source. Different places.</h2>
           </div>
+          <p>These are examples of the job each version does. They are not real notices or ready-to-publish copy.</p>
         </div>
-        <figure class="demo-visual">
-          <img src="assets/resilience-as-joy.webp" alt="Illustrated public kiosk concept showing useful resilience infrastructure in a coastal community setting.">
-          <figcaption>Fishing club stories make the daily kiosk useful before it ever needs to become emergency infrastructure.</figcaption>
-        </figure>
-      </section>
-
-      <section class="section demo-console" id="pipeline-demo" aria-labelledby="console-title">
-        <div class="section-heading">
-          <p class="eyebrow">Mutual content goal</p>
-          <h2 id="console-title">One PLFC source pack, many public-safe outputs</h2>
-          <p>Choose a club source. The pipeline protects raw member data, extracts public meaning, gets human approval, then publishes the right version for local timing, news and simulation use.</p>
-        </div>
-
-        <div class="scenario-tabs" role="tablist" aria-label="Sample PLFC content source">
-          <button class="scenario-tab is-active" type="button" data-scenario="comp" role="tab" aria-selected="true">Competition wrap-up</button>
-          <button class="scenario-tab" type="button" data-scenario="conditions" role="tab" aria-selected="false">Tide/weather window</button>
-          <button class="scenario-tab" type="button" data-scenario="clinic" role="tab" aria-selected="false">Junior clinic</button>
-        </div>
-
-        <div class="pipeline-grid">
-          <article class="pipeline-card input-card">
-            <span>01 PLFC input</span>
-            <h3>Club-approved source pack</h3>
-            <p id="source-note">PLFC shares a competition wrap-up: broad fishing zones, tide timing, photo-measured catch lengths on legal measuring devices, legal food catches where kept, sponsor thanks and a short secretary note.</p>
-            <div class="signal-tags" id="source-tags">
-              <b>Comp recap</b>
-              <b>Length photos</b>
-              <b>No weigh-to-win</b>
-            </div>
+        <div class="output-grid">
+          <article class="output-card phone-output">
+            <span>Phone post</span>
+            <h3 id="phone-title">Saturday clean-up</h3>
+            <p id="phone-copy">The short version gives the time, meeting point, what to bring and the checked weather note.</p>
           </article>
-
-          <article class="pipeline-card agent-card">
-            <span>02 Agent transmute</span>
-            <h3>Public data and story extracted</h3>
-            <ul id="agent-list">
-              <li>Separate private member details from public catch records.</li>
-              <li>Extract species, length class, kept/released note, tide and weather timing.</li>
-              <li>Create conservation-aware news copy without implying legal food fish are wrong.</li>
-            </ul>
+          <article class="output-card screen-output">
+            <span>Community screen</span>
+            <h3 id="screen-title">Help for an hour</h3>
+            <p id="screen-copy">Big type shows the essential details and a simple way to find the full notice.</p>
           </article>
-
-          <article class="pipeline-card human-card">
-            <span>03 Human oversight</span>
-            <h3>Secretary and editor gate</h3>
-            <div class="check-row"><strong>Facts</strong><span id="fact-check">Confirm photo length records, sponsor names and date</span></div>
-            <div class="check-row"><strong>Permission</strong><span id="permission-check">Use broad zones and approved catch photos only</span></div>
-            <div class="check-row"><strong>Tone</strong><span id="tone-check">Community pride, safety-aware, locally useful</span></div>
+          <article class="output-card network-output">
+            <span>Media network</span>
+            <h3 id="network-output-title">Why the clean-up matters</h3>
+            <p id="network-output-copy">A follow-up story can thank helpers, show the result and share the next practical need.</p>
+          </article>
+          <article class="output-card archive-output">
+            <span>Project record</span>
+            <h3 id="archive-title">Keep the useful trail</h3>
+            <p id="archive-copy">Save the approved notice, source contact, permission notes, result and any correction.</p>
           </article>
         </div>
       </section>
 
-      <section class="section device-section" aria-labelledby="device-title">
-        <div class="section-heading">
-          <p class="eyebrow">News and simulator pipeline</p>
-          <h2 id="device-title">The same approved PLFC data leaves in the shape each place needs</h2>
-          <p>Members need useful timing. Venue screens need quick local signal. Media pages need context. Simulators need clean public data points that remember season, place, tide, weather and community activity.</p>
+      <section class="section learning-loop" aria-labelledby="loop-title">
+        <div>
+          <p class="eyebrow">5 · Turn the job into learning</p>
+          <h2 id="loop-title">Show someone the part they can do next time.</h2>
         </div>
+        <p id="learning-copy">A beginner could learn to check a date, format a clear notice, add alt text to a photo or prepare the large-type screen version. The next event becomes easier because the method did not disappear with the first post.</p>
+      </section>
 
-        <div class="device-wall" aria-live="polite">
-          <article class="device phone-device">
-            <div class="device-bar"></div>
-            <p class="device-label">Member phone</p>
-            <h3 id="phone-title">Comp wrap-up posted</h3>
-            <p id="phone-copy">Length-photo results, release notes and next comp notice are ready. Tide story and sponsor thanks included.</p>
-          </article>
-
-          <article class="device tv-device">
-            <p class="device-label">Venue TV / kiosk</p>
-            <h3 id="tv-title">Point Lookout fishing weekend</h3>
-            <p id="tv-copy">Good turnout, rising tide window and length-based comp highlights.</p>
-            <div class="ticker" id="tv-ticker">Next: members night and junior fishing clinic</div>
-          </article>
-
-          <article class="device web-device">
-            <p class="device-label">Hyperlocal story</p>
-            <h3 id="web-title">Fishing club weekend becomes community signal</h3>
-            <p id="web-copy">The public story connects sport, family participation, local sponsors, safe conditions and the next invitation for residents and visitors.</p>
-            <a href="hyperlocal-media.html">Read media pathway</a>
-          </article>
-
-          <article class="device kiosk-device">
-            <img src="assets/utility-resilience.webp" alt="Concept diagram showing a kiosk that is useful on normal days and ready for resilience mode when needed.">
-            <div>
-              <p class="device-label">Simulator layer</p>
-              <h3 id="kiosk-title">Public data point saved</h3>
-              <p id="kiosk-copy">Event type, broad zone, tide phase, weather note, length class, kept/released status and sponsor tags become reusable local context.</p>
-            </div>
-          </article>
+      <section class="section next-step" aria-labelledby="example-next-title">
+        <p class="eyebrow">Ready to choose a real tool?</p>
+        <h2 id="example-next-title">Go to the connected toolbox.</h2>
+        <div class="button-row">
+          <a class="button primary" href="connections.html">Find a tool</a>
+          <a class="button secondary" href="https://auraofintelligence.github.io/minjerribah-screen-media-network/network/" target="_blank" rel="noopener noreferrer">Explore the wider media flow <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
-      <section class="section mutual-section" aria-labelledby="mutual-title">
-        <div class="section-heading">
-          <p class="eyebrow">Why both sides win</p>
-          <h2 id="mutual-title">PLFC gets visibility. Ready S.E.T. gets a real public data pipeline.</h2>
-        </div>
-        <div class="mutual-grid">
-          <article><span>PLFC</span><strong>Community value made visible</strong><p>Competitions, clinics, sponsors, conservation notes and volunteer work become regular public proof.</p></article>
-          <article><span>Ready S.E.T.</span><strong>Media training with real material</strong><p>Local people can learn editing, captions, fact checks, screen publishing and data hygiene on meaningful stories.</p></article>
-          <article><span>Public</span><strong>Timing-aware local relevance</strong><p>Fishing, weather, tides, events and local services become more understandable at the right moment.</p></article>
-          <article><span>Future</span><strong>Simulation-ready archive</strong><p>Approved public data accumulates into a local memory layer for seasonal planning, digital twins and resilience modelling.</p></article>
-        </div>
-      </section>
-
-      <section class="section oversight-river" aria-labelledby="river-title">
-        <div class="section-heading">
-          <p class="eyebrow">Governance shape</p>
-          <h2 id="river-title">The partnership is fast because the public/private line is visible</h2>
-        </div>
-        <div class="river-grid">
-          <article><span>PLFC vault</span><strong>Raw club records</strong><p>Member details, precise GPS, unapproved media, payments and private notes stay with the club.</p></article>
-          <article><span>Agent product</span><strong>Public-safe package</strong><p>Agents create story drafts, timing cards, outlet copy and simulator fields from approved source rows.</p></article>
-          <article><span>Human release</span><strong>Secretary/editor approval</strong><p>People check facts, consent, sponsor wording, safety, cultural context and local tone before publication.</p></article>
-          <article><span>Media network</span><strong>Publish and remember</strong><p>Ready S.E.T. distributes the story and stores the public data point for future local intelligence.</p></article>
-        </div>
-      </section>
+      <nav class="route-nav" aria-label="Previous and next pages">
+        <a href="connections.html"><span aria-hidden="true">←</span> Previous: Find a tool</a>
+        <a href="index.html">Back to home <span aria-hidden="true">→</span></a>
+      </nav>
     </main>
 
+    <a class="back-to-top" href="#top" aria-label="Back to the top">↑</a>
     <footer class="site-footer">
-      <p>This is a concept demo only. It shows public-safe PLFC content feeding Ready S.E.T. Hyperlocal Media and future local simulation layers.</p>
+      <div>
+        <strong>Ready SET Media</strong>
+        <p>An independent public planning project by Luke Hayes / Strange but True for Minjerribah / North Stradbroke Island.</p>
+      </div>
+      <p class="footer-note">This site does not speak for Quandamooka people, any community organisation, business or government body. A link does not mean partnership, approval or endorsement.</p>
     </footer>
     <script src="demo.js"></script>
   </body>
