@@ -19,8 +19,5 @@
     { threshold: 0.12 }
   );
 
-  items.forEach((item, index) => {
-    item.style.setProperty("--reveal-delay", `${(index % 4) * 70}ms`);
-    observer.observe(item);
-  });
+  items.forEach(item => observer.observe(item));
 })();

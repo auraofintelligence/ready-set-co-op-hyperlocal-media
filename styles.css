@@ -1290,21 +1290,13 @@ p {
   margin-bottom: 0.25rem;
 }
 
-.motion-ready .section-heading,
-.motion-ready .format-card,
-.motion-ready .desk-grid article,
-.motion-ready .loop-step,
-.motion-ready .architecture-flow article,
-.motion-ready .tool-card,
-.motion-ready .choice-card {
-  opacity: 0;
-  transform: translateY(24px);
+.motion-ready .is-visible {
+  animation: content-rise 440ms cubic-bezier(.2,.7,.2,1);
 }
 
-.motion-ready .is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 520ms ease var(--reveal-delay, 0ms), transform 520ms cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms);
+@keyframes content-rise {
+  from { transform: translateY(14px); }
+  to { transform: translateY(0); }
 }
 
 .motion-ready .format-card.is-visible:hover,
