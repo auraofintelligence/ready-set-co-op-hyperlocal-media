@@ -1,7 +1,7 @@
 const onboardingRoutes = {
   story: {
     goalLabel: "Share a story or correction",
-    action: "Prepare the six facts a newsroom would need.",
+    action: "Prepare the six facts a media team would need.",
     explanation:
       "Keep it simple: what happened, when, where, who the source is, what can be shared and what remains unknown.",
     link: "https://auraofintelligence.github.io/minjerribah-screen-media-network/join/",
