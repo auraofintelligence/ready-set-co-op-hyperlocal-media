@@ -1383,6 +1383,76 @@ p {
   }
 }
 
+/* Keep labels, headings and descriptions visually separate */
+
+.signal-strip > div,
+.brief-grid article,
+.architecture-flow article,
+.onboarding-flow article,
+.distribution-grid article,
+.roles-grid article,
+.rollout-track article,
+.source-links a,
+.check-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.signal-strip > div {
+  gap: 0.25rem;
+}
+
+.architecture-flow article b,
+.architecture-flow article small,
+.onboarding-flow article span,
+.onboarding-flow article strong,
+.distribution-grid article span,
+.distribution-grid article h3,
+.roles-grid article span,
+.roles-grid article strong,
+.rollout-track article span,
+.rollout-track article h3,
+.source-links a strong,
+.source-links a span,
+.check-row strong,
+.check-row span {
+  display: block;
+}
+
+.architecture-flow article small {
+  line-height: 1.5;
+}
+
+.architecture-flow article p,
+.onboarding-flow article p,
+.distribution-grid article p,
+.roles-grid article p,
+.rollout-track article p {
+  margin: 0;
+}
+
+.queue-demo > div {
+  align-items: start;
+  display: grid;
+  gap: 0.35rem 0.8rem;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  padding: 0.7rem 0;
+}
+
+.queue-demo > div small {
+  grid-column: 2;
+}
+
+.story-line article,
+.workflow article,
+.tool-card,
+.choice-card,
+.people-grid article,
+.boundary-grid article {
+  row-gap: 0.65rem;
+}
+
 @media (max-width: 560px) {
   h1,
   .page-hero h1 {
@@ -1454,9 +1524,9 @@ p {
 .onboarding-hero h1 {
   color: var(--news-black);
   font-family: var(--headline);
-  font-size: clamp(3.2rem, 6.2vw, 5.8rem);
-  letter-spacing: -0.055em;
-  line-height: 0.93;
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
   margin: 0.75rem 0 1.25rem;
   max-width: 12ch;
   text-transform: uppercase;
@@ -1729,7 +1799,7 @@ p {
 .queue-demo {
   background: #e8edef;
   border-left: 4px solid var(--news-teal);
-  font-family: Consolas, monospace;
+  font-family: var(--body);
   font-size: 0.83rem;
   line-height: 1.7;
   margin-top: 1rem;
@@ -1941,7 +2011,7 @@ p {
   --news-teal: #26708a;
   --news-signal: #e1b85b;
   --news-grey: #59656e;
-  --headline: "Arial Narrow", "Roboto Condensed", "Nunito Sans", sans-serif;
+  --headline: "Nunito Sans", "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -2751,5 +2821,143 @@ h3 {
 
   .brand-mark strong {
     font-size: 1.35rem;
+  }
+}
+
+/* Final public-layout corrections */
+
+.site-header {
+  position: relative;
+}
+
+.board-topline {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.board-lead span {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.45rem;
+}
+
+.board-flow > div {
+  align-items: center;
+  background: #203747;
+  border-top: 4px solid var(--news-teal);
+  display: flex;
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 0.85rem;
+}
+
+.board-flow > div span {
+  background: transparent;
+  flex: 0 0 auto;
+  padding: 0;
+}
+
+.board-flow > div b {
+  line-height: 1.25;
+}
+
+.board-output {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.board-output > div {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 5.2rem minmax(0, 1fr);
+}
+
+.board-output b {
+  color: var(--news-white);
+}
+
+.board-gate span,
+.board-gate strong {
+  display: block;
+}
+
+.board-gate span {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.board-gate strong {
+  line-height: 1.45;
+}
+
+.brief-grid {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.brief-grid article {
+  padding: clamp(1.6rem, 3vw, 2.25rem);
+}
+
+.brief-grid h3 {
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 1.2;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.brief-grid p {
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  max-width: 42rem;
+}
+
+.desk-grid {
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.desk-grid article {
+  align-items: start;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr;
+  min-height: 9rem;
+  padding: 1.5rem;
+}
+
+.desk-grid article span {
+  color: var(--news-grey);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+}
+
+.desk-grid article strong {
+  font-family: var(--headline);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 1000px) {
+  .desk-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .brief-grid,
+  .desk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .desk-grid article {
+    gap: 0.4rem;
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
   }
 }

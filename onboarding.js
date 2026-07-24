@@ -37,7 +37,7 @@ const onboardingRoutes = {
     goalLabel: "Plan a film or interview",
     action: "Start a documentary note before committing to production.",
     explanation:
-      "Write the real question, the source trail, who may be involved and the smallest useful scene or interview.",
+      "Write the real question, the source trail, who may be involved and the first useful scene or interview.",
     link: "https://auraofintelligence.github.io/film-club-documentary-builders/",
     linkLabel: "Open Documentary Builders ↗",
     secondary: "connections.html#make",
@@ -98,7 +98,7 @@ const onboardingRoutes = {
       ["My question or correction", "[Say it plainly]"],
       ["What I could offer", "[Optional: time, skill, gear, place, knowledge or feedback]"],
       ["What would make me cautious", "[A useful boundary or concern]"],
-      ["The smallest next conversation", "[Do not promise more than you mean]"],
+      ["The next conversation", "[Do not promise more than you mean]"],
     ],
   },
 };

@@ -33,17 +33,17 @@
     <main id="main">
       <section class="page-hero technical-hero">
         <div>
-          <span class="status-pill proposed">Draft technical architecture</span>
+          <span class="status-pill proposed">How the system could work</span>
           <p class="eyebrow">How the proposed outlet could actually work</p>
           <h1>Intake, check, edit, approve, publish, archive.</h1>
-          <p class="hero-lede">The original media program proposed a lean digital newsroom supported by automated onboarding and community submissions. This page separates the working pieces from the systems that still need to be chosen and built.</p>
+          <p class="hero-lede">A local digital newsroom needs a clear welcome pathway, community story submissions and a publishing process people can understand. This page shows what works now and what still needs to be built.</p>
         </div>
         <aside class="plain-box system-status">
           <strong>Current technical state</strong>
           <dl>
             <div><dt>Public pages</dt><dd>Working</dd></div>
             <div><dt>Browser tools</dt><dd>Working</dd></div>
-            <div><dt>Onboarding router</dt><dd>Prototype</dd></div>
+            <div><dt>Onboarding route finder</dt><dd>Working</dd></div>
             <div><dt>Submission inbox</dt><dd>Not built</dd></div>
             <div><dt>CMS + member system</dt><dd>Not selected</dd></div>
           </dl>
@@ -56,7 +56,7 @@
             <p class="eyebrow">The newsroom flow</p>
             <h2 id="architecture-title">Six stages, with a human decision before release.</h2>
           </div>
-          <p>The source program called for a simple front-end submission form rather than exposing contributors to a complex publishing dashboard. That remains a sensible design principle even if the final software changes.</p>
+          <p>Contributors would use a short, plain form instead of a complicated publishing dashboard. The newsroom would receive the details in a review queue.</p>
         </div>
         <div class="architecture-flow">
           <article>
@@ -119,7 +119,7 @@
             </div>
           </div>
         </div>
-        <p class="technical-note"><strong>Original source options:</strong> WordPress with a front-end submission plugin and moderation queue. <strong>Current decision:</strong> no CMS has been selected. A pilot should test the intake fields and review process before choosing software.</p>
+        <p class="technical-note"><strong>One practical option:</strong> WordPress with a public submission form and a private review queue. No publishing system has been selected yet. Choose one, build the form and test the whole process with real newsroom work.</p>
       </section>
 
       <section class="section onboarding-architecture" aria-labelledby="onboarding-title">
@@ -128,7 +128,7 @@
             <p class="eyebrow">Community onboarding architecture</p>
             <h2 id="onboarding-title">One link, then a route that fits the person.</h2>
           </div>
-          <p>The source document imagined a QR-linked progressive web app with profile selection, a welcome hub and a four-week email sequence. The useful core is the routing logic; the vendors are optional.</p>
+          <p>A QR code or public link could open a simple welcome page, help each person choose what they need and offer optional follow-up updates.</p>
         </div>
         <div class="onboarding-flow">
           <article><span>Trigger</span><strong>QR code, public link or welcome message</strong><p>A person reaches the same mobile-first starting page.</p></article>
@@ -149,7 +149,7 @@
           <h2 id="stack-title">What exists, what was suggested and what still needs a decision.</h2>
         </div>
         <div class="stack-table" role="table" aria-label="Proposed technical stack">
-          <div class="stack-row stack-head" role="row"><span role="columnheader">Capability</span><span role="columnheader">Working now</span><span role="columnheader">Source-document option</span><span role="columnheader">Decision still needed</span></div>
+          <div class="stack-row stack-head" role="row"><span role="columnheader">Capability</span><span role="columnheader">Working now</span><span role="columnheader">Possible option</span><span role="columnheader">Decision still needed</span></div>
           <div class="stack-row" role="row"><strong role="cell">Public website</strong><span role="cell">Static HTML/CSS/JS on GitHub Pages</span><span role="cell">WordPress</span><span role="cell">Keep static, move to CMS or use a hybrid</span></div>
           <div class="stack-row" role="row"><strong role="cell">Story intake</strong><span role="cell">Story demo and external public collaboration form</span><span role="cell">WP User Frontend / User Submitted Posts</span><span role="cell">Public versus private intake, attachments and moderation</span></div>
           <div class="stack-row" role="row"><strong role="cell">Onboarding</strong><span role="cell">Local browser route finder</span><span role="cell">Glide PWA + profile table</span><span role="cell">Whether accounts are needed at all</span></div>
@@ -157,7 +157,7 @@
           <div class="stack-row" role="row"><strong role="cell">Automation</strong><span role="cell">None across the approval gate</span><span role="cell">Zapier</span><span role="cell">Which hand-offs save time without hiding responsibility</span></div>
           <div class="stack-row" role="row"><strong role="cell">Email updates</strong><span role="cell">Not built</span><span role="cell">Mailchimp / HubSpot</span><span role="cell">Opt-in, frequency, list ownership and cost</span></div>
           <div class="stack-row" role="row"><strong role="cell">Official feed ticker</strong><span role="cell">Not built</span><span role="cell">RSS aggregation</span><span role="cell">Approved sources, timestamps, failure handling and corrections</span></div>
-          <div class="stack-row" role="row"><strong role="cell">Media storage</strong><span role="cell">No central upload library</span><span role="cell">Not resolved in source plan</span><span role="cell">Storage, backups, release records, cost and access</span></div>
+          <div class="stack-row" role="row"><strong role="cell">Media storage</strong><span role="cell">No central upload library</span><span role="cell">To be selected</span><span role="cell">Storage, backups, release records, cost and access</span></div>
         </div>
       </section>
 
@@ -185,7 +185,7 @@
             <p class="eyebrow">Sustainable Employment &amp; Training</p>
             <h2 id="roles-title">Break the newsroom into learnable roles.</h2>
           </div>
-          <p>These are role concepts from the media program, not advertised jobs. A pilot can test small supervised tasks before any employment structure is promised.</p>
+          <p>These are possible newsroom roles, not advertised jobs. Start with supervised production work, then build the employment structure properly if the Co-op goes ahead.</p>
         </div>
         <div class="roles-grid">
           <article><span>Entry task</span><strong>Source checker</strong><p>Confirm a link, date, spelling or public status.</p></article>
@@ -205,7 +205,7 @@
         <div class="rollout-track">
           <article><span>Phase 01</span><h3>Listen + specify</h3><p>Test the onboarding routes, story fields, status labels and approval gate with willing people.</p></article>
           <article><span>Phase 02</span><h3>Run one desk</h3><p>Publish one small recurring format using manual review and the existing public tools.</p></article>
-          <article><span>Phase 03</span><h3>Choose the stack</h3><p>Select a CMS, intake method, storage and update system from evidence gathered in the pilot.</p></article>
+          <article><span>Phase 03</span><h3>Choose and build the system</h3><p>Set up the publishing system, story intake, media storage and community updates using what the newsroom has learned.</p></article>
           <article><span>Phase 04</span><h3>Train + report</h3><p>Define supervised roles, show what was produced, what it cost and what should happen next.</p></article>
         </div>
       </section>
